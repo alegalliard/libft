@@ -12,4 +12,5 @@ Lib em C para reagrupar funções utilitárias que poderão ser reutilizadas nos
 
 ### Links úteis
 Makefile manual: https://noahloomans.com/tutorials/makefile.pt-br/
-Makefile do libft https://github.com/LuigiEnzoFerrari/LuigiEnzoFerrari/wiki/Makefile
+Makefile do libft: https://github.com/LuigiEnzoFerrari/LuigiEnzoFerrari/wiki/Makefile
+Constant bytes: https://www.tutorialspoint.com/cprogramming/c_constants.htm
