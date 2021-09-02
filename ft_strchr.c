@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 
 int main(void)
 {
-	char str[] = "Orion gostoso lin";
+	char str[] = "The strchr() function returns a pointer to the first occurrence of the character c in the string s.e ";
 	char c = 'g';
 	char *p;
 	char *p2;

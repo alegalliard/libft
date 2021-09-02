@@ -3,14 +3,11 @@
 
 void	ft_bzero(void *s, size_t n)
 {
+	size_t	i;
 
+	while (i < n)
+	{
+		((unsigned char *)s)[i] = 0;
+		i++;
+	}
 }
-
-
-int main( void )
-  {
-    char buffer[80];
-
-    bzero( buffer, 80 );
-    return EXIT_SUCCESS;
-  }
