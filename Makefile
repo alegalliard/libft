@@ -7,7 +7,7 @@ LDFLAGS ?=
 
 TESTFOLDER := bin/test
 
-
+#clear && gcc ft_memmove.c -Wall -Wextra -Werror -fsanitize=address  && ./a.out
 all: build
 
 clean:
