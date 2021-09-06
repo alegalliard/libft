@@ -28,6 +28,7 @@ void	*ft_memset(void *str, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *str, int c, size_t max);
+int     ft_memcmp(const void *str1, const void *str2, size_t max);
 
 #endif
 /*
