@@ -38,7 +38,7 @@ void	*ft_calloc(size_t count, size_t size);
 int		ft_memcmp(const void *str1, const void *str2, size_t max);
 char	*ft_strdup(const char *s);
 
-char	*strdup(const char *s);
+char	*ft_strdup(const char *s);
 //conversão
 int		ft_atoi(const char *c);
 
