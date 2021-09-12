@@ -1,4 +1,4 @@
-#include "../libft.h"
+#include "libft.h"
 #include <stdio.h>
 
 static size_t split_size(char const *s, char c)

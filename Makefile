@@ -1,35 +1,65 @@
-
-NAME = libft.a
-CFILES := ft_isalpha.c main.c
-CFLAGS ?= -Wall -Wextra -Werror
-CC ?= clang
-LDFLAGS ?=
-
 include paths.mk
+PROJE_NAME = libft.a
 
+
+CC ?= gcc
+CFLAGS = -Wall -Wextra -Werror
+TEST = src/string/ft_strlcat.c
+INCLUDE = -I ./include/
+
+all: compila.o
+
+compila.o: 
+	$(CC) -c $(TEST) $(INCLUDE) $(CFLAGS) -o COMPILADINHO
+
+
+# Receita:
+# Mapear a pasta src
+#	Pegar cada arquivo
+# Mapear a pasta include (pra adicionar o header na compilação dos abstratos)
+# Compilar como tipo abstrato de dados todos os arquivos .c com o include mapeado
+
+
+#src: arquivos-objeto (tipo abstrato de dado, nao executável por nao ter um main)
+#include: headers
+# gcc -c ./src/ -I ./include -o obj/COMPILADINHO
+#				  |___ define o diretório onde está o header
+
+
+
+#compilei um arquivo objeto (tipo abstrato de dado, ou seja, sem main) assim:
+# gcc -c string/ft_strlen.c -o COMPILADINHO.out
+# mas n"ao dá pra fazer com multiplos arquivos
+
+#ESPECIFICANDO PATH
+# a flag -I especifica o path onde está o header
+# no include coloco todo os arquivos de cabeçalho (todas as especificações dos tipos abstratos de dados)
+# gcc -c float_vector.c -o obj/float_vector.o
+
+#all: $(PROJ_NAME)
 #clear && gcc ft_memmove.c -Wall -Wextra -Werror -fsanitize=address  && ./a.out
-all: build
+# all: build
 
-clean:
-	echo "Removing older versions"
-	rm -rf ./bin
+# clean:
+# 	echo "Removing older versions"
+# 	rm -rf ./bin
 
-build: clean
-	echo "Recompile..."
-	mkdir bin
+# build: clean
+# 	echo "Recompile..."
+# 	mkdir bin
 
-build_tests:
-	echo "Building test suite"
-	rm -rf bin/test
-	gcc -c 
+# build_tests:
+# 	echo "Building test suite"
+# 	rm -rf bin/test
+# 	gcc -c 
 
-test:
+# test:
 	
-$(NAME): $(CFILES)
-	$(CC) -c $(CFLAGS) -o $@ $^
+# $(NAME): $(CFILES)
+# 	$(CC) -c $(CFLAGS) -o $@ $^
 
-%.o: %.c
-	gcc -c $(CFLAGS) -o ./bin/$(FILES)
+# %.o: %.c
+# 	gcc -c $(CFLAGS) -o ./bin/$(FILES)
 
 
 # LDFLAGS ?=
