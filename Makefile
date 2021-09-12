@@ -1,11 +1,11 @@
 
-NAME := compile
+NAME = libft.a
 CFILES := ft_isalpha.c main.c
 CFLAGS ?= -Wall -Wextra -Werror
 CC ?= clang
 LDFLAGS ?=
 
-TESTFOLDER := bin/test
+include paths.mk
 
 #clear && gcc ft_memmove.c -Wall -Wextra -Werror -fsanitize=address  && ./a.out
 all: build
