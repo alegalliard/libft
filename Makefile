@@ -4,15 +4,23 @@ PROJE_NAME = libft.a
 
 CC ?= gcc
 CFLAGS = -Wall -Wextra -Werror
-TEST = src/string/ft_strlcat.c
-INCLUDE = -I ./include/
+TEST = ./src/string
+DIR_INCLUDE = ./include
+DIR_SRC		= ./src
+DIR_BIN		= ./bin
 
-all: compila.o
+all: lib
 
-compila.o: 
-	$(CC) -c $(TEST) $(INCLUDE) $(CFLAGS) -o COMPILADINHO
+%.o: ./src/string/%.c
+	gcc -c $< -I $(DIR_INCLUDE) $(CFLAGS) -o ./bin/$@
+
+lib: ft_strlen.o \
+	ft_strlcat.o
 
 
+
+#%.o: ./src/string/%.c $(DIR_INCLUDE)/%.h
+#	echo "sadasd"
 # Receita:
 # Mapear a pasta src
 #	Pegar cada arquivo
