@@ -6,7 +6,6 @@ static size_t split_size(char const *s, char c)
 	size_t arr_size;
 
 	arr_size = 0;
-	//substituir por *ft_strchr(const char *s, int c)?
 	while (*s)
 	{
 		if (*s == c)
@@ -19,9 +18,19 @@ static size_t split_size(char const *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char *pointer;
+	size_t i;
 
 	if (!s || !c)
 		return (NULL);
+	pointer = malloc(split_size(s, c) * sizeof(char));
+	if (!pointer)
+		return (NULL);
+
+	i = 0;
+	while ()
+	{
+
+	}
 	return (NULL);
 }
 

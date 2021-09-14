@@ -21,6 +21,7 @@ int		ft_isalnum(int c);
 int		ft_isspace(int c);
 int		ft_strlen(const char *str);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *str1, const char *str2, size_t max);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);

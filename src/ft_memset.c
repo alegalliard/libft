@@ -10,4 +10,5 @@ void	*ft_memset(void *str, int c, size_t n)
 		((unsigned char *)str)[i] = c;
 		i++;
 	}
+	return (str);
 }

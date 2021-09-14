@@ -2,10 +2,10 @@
 
 char	*ft_strnstr(const char *str, const char *sub, size_t max)
 {
-	int	i;
-	int	j;
-	int	curr;
-	int	sub_len;
+	size_t	i;
+	size_t	j;
+	size_t	curr;
+	size_t	sub_len;
 
 	i = 0;
 	j = 0;

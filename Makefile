@@ -5,17 +5,51 @@ PROJE_NAME = libft.a
 CC ?= gcc
 CFLAGS = -Wall -Wextra -Werror
 TEST = ./src/string
-DIR_INCLUDE = ./include
+DIR_INCLUDE = ./
 DIR_SRC		= ./src
 DIR_BIN		= ./bin
 
 all: lib
 
-%.o: ./src/string/%.c
+%.o: $(DIR_SRC)/%.c
 	gcc -c $< -I $(DIR_INCLUDE) $(CFLAGS) -o ./bin/$@
+#	gcc -c $< -I $(DIR_INCLUDE)/ $(CFLAGS) -o ./bin/$@
 
-lib: ft_strlen.o \
-	ft_strlcat.o
+lib: \
+	ft_memset.o \
+ 	ft_bzero.o \
+ 	ft_memcpy.o \
+ 	ft_memmove.o \
+	ft_memchr.o \
+	ft_memcmp.o \
+	ft_strlen.o \
+	ft_isalpha.o \
+	ft_isdigit.o \
+	ft_isalnum.o \
+	ft_isascii.o \
+	ft_isprint.o \
+	ft_toupper.o \
+	ft_tolower.o \
+	ft_strchr.o \
+	ft_strrchr.o \
+	ft_strncmp.o \
+	ft_strlcpy.o \
+	ft_strlcat.o \
+	ft_strnstr.o \
+	ft_atoi.o \
+	ft_calloc.o \
+	ft_strdup.o \
+	ft_substr.o \
+	ft_strjoin.o \
+	ft_strtrim.o \
+	ft_itoa.o \
+	ft_strmapi.o \
+	ft_putchar_fd.o \
+	ft_putstr_fd.o \
+	ft_putendl_fd.o \
+	ft_putnbr_fd.o \
+	ft_striteri.o \
+	ft_split.o 
 
 
 

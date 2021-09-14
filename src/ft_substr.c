@@ -2,10 +2,10 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*sub;
-	int		s_len;
-	size_t	i;
-	size_t	j;
+	char			*sub;
+	unsigned int	s_len;
+	size_t			i;
+	size_t			j;
 
 	if (!s || !len)
 		return (NULL);
