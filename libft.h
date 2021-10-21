@@ -46,6 +46,7 @@ void    ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(const char *s, int fd);
 
 //conversão
+int     ft_tolower(int c);
 int     ft_toupper(int c);
 int		ft_atoi(const char *c);
 
